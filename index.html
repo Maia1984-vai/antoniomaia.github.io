@@ -1,0 +1,2487 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Portfólio profissional de Antonio Maia — desenvolvimento de websites, projetos digitais e soluções com inteligência artificial."
+    >
+
+    <meta
+        name="author"
+        content="Antonio Maia"
+    >
+
+    <meta
+        name="theme-color"
+        content="#080b12"
+    >
+
+    <title>
+        Antonio Maia | Portfólio
+    </title>
+
+
+    <!-- =========================
+         FONTES
+    ========================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <style>
+
+        /* =====================================
+           RESET
+        ===================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+            font-family: "Inter", sans-serif;
+
+            background: #080b12;
+
+            color: #ffffff;
+
+            line-height: 1.6;
+
+            overflow-x: hidden;
+        }
+
+
+        img {
+            max-width: 100%;
+
+            display: block;
+        }
+
+
+        a {
+            text-decoration: none;
+
+            color: inherit;
+        }
+
+
+        /* =====================================
+           VARIÁVEIS
+        ===================================== */
+
+        :root {
+
+            --preto:
+                #080b12;
+
+            --preto-2:
+                #0d121c;
+
+            --azul:
+                #111c2d;
+
+            --ouro:
+                #d4af5a;
+
+            --ouro-claro:
+                #f1d78b;
+
+            --branco:
+                #ffffff;
+
+            --cinza:
+                #9ca7b6;
+
+            --borda:
+                rgba(255,255,255,0.09);
+
+            --max:
+                1200px;
+        }
+
+
+        /* =====================================
+           CONTAINER
+        ===================================== */
+
+        .container {
+
+            width: min(
+                92%,
+                var(--max)
+            );
+
+            margin: auto;
+        }
+
+
+        .section {
+
+            padding:
+                110px 0;
+        }
+
+
+        /* =====================================
+           HEADER
+        ===================================== */
+
+        header {
+
+            position: fixed;
+
+            top: 0;
+
+            left: 0;
+
+            width: 100%;
+
+            z-index: 999;
+
+            background:
+                rgba(
+                    8,
+                    11,
+                    18,
+                    0.82
+                );
+
+            backdrop-filter:
+                blur(18px);
+
+            border-bottom:
+                1px solid var(--borda);
+        }
+
+
+        .navbar {
+
+            height: 78px;
+
+            display: flex;
+
+            align-items: center;
+
+            justify-content:
+                space-between;
+        }
+
+
+        .logo {
+
+            font-family:
+                "Montserrat",
+                sans-serif;
+
+            font-weight: 800;
+
+            font-size: 1.35rem;
+
+            letter-spacing: -1px;
+        }
+
+
+        .logo span {
+
+            color:
+                var(--ouro-claro);
+        }
+
+
+        .nav {
+
+            display: flex;
+
+            align-items: center;
+
+            gap: 30px;
+        }
+
+
+        .nav a {
+
+            color:
+                #dce2ea;
+
+            font-size:
+                0.9rem;
+
+            transition:
+                0.3s;
+        }
+
+
+        .nav a:hover {
+
+            color:
+                var(--ouro-claro);
+        }
+
+
+        .nav-contact {
+
+            border:
+                1px solid var(--ouro);
+
+            padding:
+                9px 18px;
+
+            border-radius:
+                30px;
+        }
+
+
+        .menu {
+
+            display: none;
+
+            background: none;
+
+            border: none;
+
+            color: white;
+
+            font-size: 1.8rem;
+
+            cursor: pointer;
+        }
+
+
+        /* =====================================
+           HERO
+        ===================================== */
+
+        .hero {
+
+            min-height:
+                100vh;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            position:
+                relative;
+
+            overflow:
+                hidden;
+
+            background:
+
+                radial-gradient(
+                    circle at 80% 20%,
+                    rgba(
+                        212,
+                        175,
+                        90,
+                        0.13
+                    ),
+                    transparent 30%
+                ),
+
+                radial-gradient(
+                    circle at 10% 80%,
+                    rgba(
+                        25,
+                        70,
+                        120,
+                        0.18
+                    ),
+                    transparent 35%
+                ),
+
+                var(--preto);
+        }
+
+
+        .hero::before {
+
+            content: "";
+
+            position: absolute;
+
+            width:
+                600px;
+
+            height:
+                600px;
+
+            border-radius:
+                50%;
+
+            border:
+                1px solid
+                rgba(
+                    212,
+                    175,
+                    90,
+                    0.07
+                );
+
+            right:
+                -300px;
+
+            top:
+                100px;
+        }
+
+
+        .hero-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                1.1fr
+                0.9fr;
+
+            align-items:
+                center;
+
+            gap:
+                80px;
+        }
+
+
+        .hero-content {
+
+            animation:
+                aparecer 1s ease;
+        }
+
+
+        .label {
+
+            display:
+                inline-block;
+
+            color:
+                var(--ouro-claro);
+
+            border:
+                1px solid
+                rgba(
+                    212,
+                    175,
+                    90,
+                    0.3
+                );
+
+            padding:
+                8px 15px;
+
+            border-radius:
+                30px;
+
+            font-size:
+                0.75rem;
+
+            letter-spacing:
+                2px;
+
+            text-transform:
+                uppercase;
+
+            margin-bottom:
+                25px;
+        }
+
+
+        .hero h1 {
+
+            font-family:
+                "Montserrat",
+                sans-serif;
+
+            font-size:
+                clamp(
+                    3.3rem,
+                    7vw,
+                    6.5rem
+                );
+
+            line-height:
+                0.95;
+
+            letter-spacing:
+                -5px;
+
+            margin-bottom:
+                28px;
+        }
+
+
+        .hero h1 span {
+
+            color:
+                var(--ouro-claro);
+        }
+
+
+        .hero-text {
+
+            max-width:
+                650px;
+
+            color:
+                var(--cinza);
+
+            font-size:
+                1.12rem;
+
+            margin-bottom:
+                35px;
+        }
+
+
+        .buttons {
+
+            display:
+                flex;
+
+            flex-wrap:
+                wrap;
+
+            gap:
+                15px;
+        }
+
+
+        .btn {
+
+            display:
+                inline-flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            padding:
+                14px 24px;
+
+            border-radius:
+                8px;
+
+            font-weight:
+                700;
+
+            transition:
+                0.3s;
+        }
+
+
+        .btn-primary {
+
+            background:
+                var(--ouro);
+
+            color:
+                #080b12;
+        }
+
+
+        .btn-primary:hover {
+
+            background:
+                var(--ouro-claro);
+
+            transform:
+                translateY(-3px);
+
+            box-shadow:
+                0 15px 40px
+                rgba(
+                    212,
+                    175,
+                    90,
+                    0.2
+                );
+        }
+
+
+        .btn-outline {
+
+            border:
+                1px solid var(--borda);
+
+            background:
+                rgba(
+                    255,
+                    255,
+                    255,
+                    0.03
+                );
+        }
+
+
+        .btn-outline:hover {
+
+            border-color:
+                var(--ouro);
+
+            color:
+                var(--ouro-claro);
+
+            transform:
+                translateY(-3px);
+        }
+
+
+        /* =====================================
+           FOTO
+        ===================================== */
+
+        .hero-photo {
+
+            display:
+                flex;
+
+            justify-content:
+                center;
+        }
+
+
+        .photo-ring {
+
+            width:
+                min(
+                    400px,
+                    80vw
+                );
+
+            aspect-ratio:
+                1;
+
+            position:
+                relative;
+        }
+
+
+        .photo-ring::before {
+
+            content: "";
+
+            position:
+                absolute;
+
+            inset:
+                -15px;
+
+            border:
+                1px solid
+                rgba(
+                    212,
+                    175,
+                    90,
+                    0.35
+                );
+
+            border-radius:
+                50%;
+
+            animation:
+                girar 20s linear infinite;
+        }
+
+
+        .photo-ring img {
+
+            width:
+                100%;
+
+            height:
+                100%;
+
+            object-fit:
+                cover;
+
+            border-radius:
+                50%;
+
+            border:
+                8px solid
+                var(--azul);
+
+            position:
+                relative;
+
+            z-index:
+                2;
+
+            box-shadow:
+                0 30px 80px
+                rgba(
+                    0,
+                    0,
+                    0,
+                    0.55
+                );
+        }
+
+
+        /* =====================================
+           SEÇÕES
+        ===================================== */
+
+        .dark-section {
+
+            background:
+                var(--preto-2);
+        }
+
+
+        .section-heading {
+
+            max-width:
+                720px;
+
+            margin-bottom:
+                55px;
+        }
+
+
+        .section-title {
+
+            font-family:
+                "Montserrat",
+                sans-serif;
+
+            font-size:
+                clamp(
+                    2rem,
+                    4vw,
+                    3.3rem
+                );
+
+            line-height:
+                1.1;
+
+            margin:
+                10px 0 18px;
+        }
+
+
+        .section-description {
+
+            color:
+                var(--cinza);
+
+            font-size:
+                1rem;
+        }
+
+
+        /* =====================================
+           SOBRE
+        ===================================== */
+
+        .about-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                0.8fr
+                1.2fr;
+
+            align-items:
+                center;
+
+            gap:
+                80px;
+        }
+
+
+        .about-photo img {
+
+            width:
+                100%;
+
+            max-width:
+                420px;
+
+            border-radius:
+                20px;
+
+            border:
+                1px solid var(--borda);
+
+            box-shadow:
+                0 30px 70px
+                rgba(
+                    0,
+                    0,
+                    0,
+                    0.3
+                );
+        }
+
+
+        .about-text p {
+
+            color:
+                var(--cinza);
+
+            margin-bottom:
+                20px;
+
+            font-size:
+                1.05rem;
+        }
+
+
+        .highlight {
+
+            border-left:
+                3px solid
+                var(--ouro);
+
+            background:
+                rgba(
+                    212,
+                    175,
+                    90,
+                    0.05
+                );
+
+            padding:
+                18px 22px;
+
+            color:
+                #e2e8f0;
+        }
+
+
+        /* =====================================
+           PROJETOS
+        ===================================== */
+
+        .projects {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(
+                    2,
+                    1fr
+                );
+
+            gap:
+                30px;
+        }
+
+
+        .project {
+
+            background:
+                var(--azul);
+
+            border:
+                1px solid
+                var(--borda);
+
+            border-radius:
+                18px;
+
+            overflow:
+                hidden;
+
+            transition:
+                0.4s;
+        }
+
+
+        .project:hover {
+
+            transform:
+                translateY(-10px);
+
+            border-color:
+                rgba(
+                    212,
+                    175,
+                    90,
+                    0.35
+                );
+
+            box-shadow:
+                0 30px 70px
+                rgba(
+                    0,
+                    0,
+                    0,
+                    0.3
+                );
+        }
+
+
+        .project-image {
+
+            height:
+                310px;
+
+            overflow:
+                hidden;
+        }
+
+
+        .project-image img {
+
+            width:
+                100%;
+
+            height:
+                100%;
+
+            object-fit:
+                cover;
+
+            transition:
+                transform
+                0.6s;
+        }
+
+
+        .project:hover
+        .project-image img {
+
+            transform:
+                scale(1.06);
+        }
+
+
+        .project-content {
+
+            padding:
+                28px;
+        }
+
+
+        .status {
+
+            color:
+                var(--ouro-claro);
+
+            font-size:
+                0.7rem;
+
+            font-weight:
+                800;
+
+            letter-spacing:
+                2px;
+
+            text-transform:
+                uppercase;
+
+            margin-bottom:
+                10px;
+        }
+
+
+        .project h3 {
+
+            font-family:
+                "Montserrat",
+                sans-serif;
+
+            font-size:
+                1.6rem;
+
+            margin-bottom:
+                12px;
+        }
+
+
+        .project p {
+
+            color:
+                var(--cinza);
+
+            margin-bottom:
+                22px;
+        }
+
+
+        .project-link {
+
+            color:
+                var(--ouro-claro);
+
+            font-weight:
+                700;
+        }
+
+
+        /* =====================================
+           MAAYAH AI
+        ===================================== */
+
+        .ai-section {
+
+            position:
+                relative;
+
+            overflow:
+                hidden;
+
+            background:
+
+                radial-gradient(
+                    circle at 50% 50%,
+                    rgba(
+                        212,
+                        175,
+                        90,
+                        0.08
+                    ),
+                    transparent 50%
+                ),
+
+                var(--preto-2);
+        }
+
+
+        .ai-card {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                0.9fr
+                1.1fr;
+
+            align-items:
+                center;
+
+            gap:
+                60px;
+
+            padding:
+                55px;
+
+            border:
+                1px solid
+                rgba(
+                    212,
+                    175,
+                    90,
+                    0.25
+                );
+
+            border-radius:
+                25px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(
+                        255,
+                        255,
+                        255,
+                        0.04
+                    ),
+                    rgba(
+                        212,
+                        175,
+                        90,
+                        0.03
+                    )
+                );
+        }
+
+
+        .ai-image {
+
+            position:
+                relative;
+        }
+
+
+        .ai-image img {
+
+            width:
+                100%;
+
+            max-width:
+                480px;
+
+            margin:
+                auto;
+
+            border-radius:
+                18px;
+
+            border:
+                1px solid
+                var(--borda);
+
+            box-shadow:
+                0 30px 80px
+                rgba(
+                    0,
+                    0,
+                    0,
+                    0.4
+                );
+        }
+
+
+        .coming {
+
+            display:
+                inline-block;
+
+            padding:
+                7px 13px;
+
+            border-radius:
+                30px;
+
+            background:
+                rgba(
+                    212,
+                    175,
+                    90,
+                    0.1
+                );
+
+            color:
+                var(--ouro-claro);
+
+            font-size:
+                0.72rem;
+
+            font-weight:
+                800;
+
+            letter-spacing:
+                2px;
+
+            margin-bottom:
+                18px;
+        }
+
+
+        .ai-content h3 {
+
+            font-family:
+                "Montserrat",
+                sans-serif;
+
+            font-size:
+                clamp(
+                    2rem,
+                    4vw,
+                    3.4rem
+                );
+
+            line-height:
+                1.05;
+
+            margin-bottom:
+                20px;
+        }
+
+
+        .ai-content h3 span {
+
+            color:
+                var(--ouro-claro);
+        }
+
+
+        .ai-content p {
+
+            color:
+                var(--cinza);
+
+            font-size:
+                1.05rem;
+
+            margin-bottom:
+                18px;
+        }
+
+
+        .ai-features {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap:
+                12px;
+
+            margin:
+                25px 0;
+        }
+
+
+        .ai-feature {
+
+            padding:
+                12px;
+
+            border:
+                1px solid var(--borda);
+
+            border-radius:
+                8px;
+
+            color:
+                #dbe3ee;
+
+            font-size:
+                0.85rem;
+        }
+
+
+        /* =====================================
+           SERVIÇOS
+        ===================================== */
+
+        .services {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(
+                    3,
+                    1fr
+                );
+
+            gap:
+                25px;
+        }
+
+
+        .service {
+
+            padding:
+                35px;
+
+            background:
+                var(--azul);
+
+            border:
+                1px solid var(--borda);
+
+            border-radius:
+                16px;
+
+            transition:
+                0.3s;
+        }
+
+
+        .service:hover {
+
+            transform:
+                translateY(-7px);
+
+            border-color:
+                rgba(
+                    212,
+                    175,
+                    90,
+                    0.3
+                );
+        }
+
+
+        .number {
+
+            color:
+                var(--ouro);
+
+            font-size:
+                0.8rem;
+
+            font-weight:
+                800;
+
+            letter-spacing:
+                2px;
+
+            margin-bottom:
+                20px;
+        }
+
+
+        .service h3 {
+
+            font-family:
+                "Montserrat",
+                sans-serif;
+
+            font-size:
+                1.25rem;
+
+            margin-bottom:
+                12px;
+        }
+
+
+        .service p {
+
+            color:
+                var(--cinza);
+        }
+
+
+        /* =====================================
+           CONTATO
+        ===================================== */
+
+        .contact-box {
+
+            text-align:
+                center;
+
+            padding:
+                90px 30px;
+
+            border:
+                1px solid var(--borda);
+
+            border-radius:
+                25px;
+
+            background:
+                radial-gradient(
+                    circle at center,
+                    rgba(
+                        212,
+                        175,
+                        90,
+                        0.08
+                    ),
+                    transparent 60%
+                );
+        }
+
+
+        .contact-box h2 {
+
+            font-family:
+                "Montserrat",
+                sans-serif;
+
+            font-size:
+                clamp(
+                    2.2rem,
+                    5vw,
+                    4.2rem
+                );
+
+            line-height:
+                1.05;
+
+            margin:
+                15px 0 20px;
+        }
+
+
+        .contact-box p {
+
+            color:
+                var(--cinza);
+
+            max-width:
+                620px;
+
+            margin:
+                0 auto 30px;
+        }
+
+
+        .phone {
+
+            display:
+                block;
+
+            margin-top:
+                25px;
+
+            color:
+                var(--ouro-claro);
+
+            font-weight:
+                700;
+        }
+
+
+        /* =====================================
+           FOOTER
+        ===================================== */
+
+        footer {
+
+            padding:
+                35px 0;
+
+            background:
+                #05070c;
+
+            border-top:
+                1px solid var(--borda);
+        }
+
+
+        .footer {
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                space-between;
+        }
+
+
+        .footer-logo {
+
+            font-family:
+                "Montserrat",
+                sans-serif;
+
+            font-weight:
+                800;
+        }
+
+
+        .footer-logo span {
+
+            color:
+                var(--ouro-claro);
+        }
+
+
+        .copyright {
+
+            color:
+                var(--cinza);
+
+            font-size:
+                0.8rem;
+        }
+
+
+        /* =====================================
+           WHATSAPP
+        ===================================== */
+
+        .whatsapp {
+
+            position:
+                fixed;
+
+            right:
+                25px;
+
+            bottom:
+                25px;
+
+            width:
+                58px;
+
+            height:
+                58px;
+
+            border-radius:
+                50%;
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                center;
+
+            background:
+                #25D366;
+
+            color:
+                white;
+
+            font-size:
+                1.5rem;
+
+            z-index:
+                1000;
+
+            box-shadow:
+                0 10px 30px
+                rgba(
+                    37,
+                    211,
+                    102,
+                    0.3
+                );
+
+            transition:
+                0.3s;
+        }
+
+
+        .whatsapp:hover {
+
+            transform:
+                scale(1.1);
+        }
+
+
+        /* =====================================
+           ANIMAÇÕES
+        ===================================== */
+
+        @keyframes aparecer {
+
+            from {
+
+                opacity:
+                    0;
+
+                transform:
+                    translateY(30px);
+            }
+
+            to {
+
+                opacity:
+                    1;
+
+                transform:
+                    translateY(0);
+            }
+        }
+
+
+        @keyframes girar {
+
+            from {
+                transform:
+                    rotate(0deg);
+            }
+
+            to {
+                transform:
+                    rotate(360deg);
+            }
+        }
+
+
+        /* =====================================
+           RESPONSIVO
+        ===================================== */
+
+        @media (max-width: 900px) {
+
+            .hero-grid {
+
+                grid-template-columns:
+                    1fr;
+
+                text-align:
+                    center;
+
+                padding-top:
+                    100px;
+            }
+
+
+            .hero-text {
+
+                margin:
+                    auto;
+            }
+
+
+            .buttons {
+
+                justify-content:
+                    center;
+            }
+
+
+            .hero-photo {
+
+                order:
+                    -1;
+            }
+
+
+            .photo-ring {
+
+                width:
+                    280px;
+            }
+
+
+            .about-grid {
+
+                grid-template-columns:
+                    1fr;
+
+                gap:
+                    45px;
+            }
+
+
+            .about-photo img {
+
+                margin:
+                    auto;
+            }
+
+
+            .ai-card {
+
+                grid-template-columns:
+                    1fr;
+
+                padding:
+                    35px;
+            }
+
+
+            .services {
+
+                grid-template-columns:
+                    1fr 1fr;
+            }
+
+        }
+
+
+        @media (max-width: 700px) {
+
+            .nav {
+
+                position:
+                    absolute;
+
+                top:
+                    78px;
+
+                left:
+                    0;
+
+                width:
+                    100%;
+
+                background:
+                    #080b12;
+
+                border-bottom:
+                    1px solid var(--borda);
+
+                padding:
+                    25px;
+
+                flex-direction:
+                    column;
+
+                display:
+                    none;
+            }
+
+
+            .nav.active {
+
+                display:
+                    flex;
+            }
+
+
+            .menu {
+
+                display:
+                    block;
+            }
+
+
+            .projects {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+
+            .services {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+
+            .ai-features {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+
+            .section {
+
+                padding:
+                    80px 0;
+            }
+
+
+            .footer {
+
+                flex-direction:
+                    column;
+
+                gap:
+                    15px;
+
+                text-align:
+                    center;
+            }
+
+        }
+
+
+        @media (max-width: 480px) {
+
+            .hero h1 {
+
+                font-size:
+                    3rem;
+
+                letter-spacing:
+                    -2px;
+            }
+
+
+            .project-image {
+
+                height:
+                    240px;
+            }
+
+
+            .ai-card {
+
+                padding:
+                    25px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================
+         HEADER
+    ====================================== -->
+
+    <header>
+
+        <div class="container navbar">
+
+            <a
+                href="#inicio"
+                class="logo"
+            >
+                Antonio<span>Maia</span>
+            </a>
+
+
+            <button
+                class="menu"
+                id="menu"
+                aria-label="Abrir menu"
+            >
+                ☰
+            </button>
+
+
+            <nav
+                class="nav"
+                id="nav"
+            >
+
+                <a href="#inicio">
+                    Início
+                </a>
+
+                <a href="#sobre">
+                    Sobre
+                </a>
+
+                <a href="#projetos">
+                    Projetos
+                </a>
+
+                <a href="#futuros">
+                    Em breve
+                </a>
+
+                <a href="#servicos">
+                    Serviços
+                </a>
+
+                <a
+                    href="#contato"
+                    class="nav-contact"
+                >
+                    Contato
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================
+         HERO
+    ====================================== -->
+
+    <main>
+
+        <section
+            class="hero"
+            id="inicio"
+        >
+
+            <div class="container hero-grid">
+
+
+                <div class="hero-content">
+
+                    <span class="label">
+                        Portfólio profissional
+                    </span>
+
+
+                    <h1>
+                        Antonio<br>
+                        <span>Maia.</span>
+                    </h1>
+
+
+                    <p class="hero-text">
+
+                        Desenvolvo projetos digitais que unem
+                        tecnologia, criatividade e estratégia para
+                        transformar ideias em experiências reais.
+
+                    </p>
+
+
+                    <div class="buttons">
+
+                        <a
+                            href="#projetos"
+                            class="btn btn-primary"
+                        >
+                            Conhecer projetos
+                        </a>
+
+
+                        <a
+                            href="#contato"
+                            class="btn btn-outline"
+                        >
+                            Falar comigo
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="hero-photo">
+
+                    <div class="photo-ring">
+
+                        <img
+                            src="imagens/autor.webp"
+                            alt="Antonio Maia"
+                        >
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             SOBRE
+        ====================================== -->
+
+        <section
+            class="section dark-section"
+            id="sobre"
+        >
+
+            <div class="container about-grid">
+
+
+                <div class="about-photo">
+
+                    <img
+                        src="imagens/Maayah.jpeg"
+                        alt="Projeto Maayah"
+                    >
+
+                </div>
+
+
+
+                <div class="about-text">
+
+                    <div class="section-heading">
+
+                        <span class="label">
+                            Sobre mim
+                        </span>
+
+
+                        <h2 class="section-title">
+
+                            Tecnologia com propósito.
+
+                        </h2>
+
+                    </div>
+
+
+                    <p>
+
+                        Sou <strong>Antonio Maia</strong> e trabalho
+                        no desenvolvimento de projetos digitais,
+                        websites e novas soluções utilizando
+                        tecnologia e inteligência artificial.
+
+                    </p>
+
+
+                    <p>
+
+                        Meu objetivo é transformar ideias em produtos
+                        digitais que sejam modernos, funcionais e
+                        capazes de gerar valor para pessoas,
+                        empresas e instituições.
+
+                    </p>
+
+
+                    <div class="highlight">
+
+                        Este portfólio apresenta alguns dos projetos
+                        que já foram desenvolvidos e também as
+                        próximas soluções que estão sendo preparadas.
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             PROJETOS REALIZADOS
+        ====================================== -->
+
+        <section
+            class="section"
+            id="projetos"
+        >
+
+            <div class="container">
+
+
+                <div class="section-heading">
+
+                    <span class="label">
+                        Portfólio
+                    </span>
+
+
+                    <h2 class="section-title">
+                        Projetos realizados.
+                    </h2>
+
+
+                    <p class="section-description">
+
+                        Projetos digitais desenvolvidos e publicados.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="projects">
+
+
+                    <!-- ESCOLA CONFIAR -->
+
+                    <article class="project">
+
+                        <div class="project-image">
+
+                            <img
+                                src="imagens/escola-confiar.jpeg"
+                                alt="Escola Confiar"
+                            >
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <div class="status">
+                                Projeto realizado
+                            </div>
+
+
+                            <h3>
+                                Escola Confiar
+                            </h3>
+
+
+                            <p>
+
+                                Desenvolvimento da presença digital
+                                da Escola Confiar, com website
+                                institucional, apresentação da escola,
+                                projetos, ensino e comunicação.
+
+                            </p>
+
+
+                            <a
+                                href="https://escolaconfiar.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link"
+                            >
+                                Visitar escolaconfiar.com →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- VITA NOVA -->
+
+                    <article class="project">
+
+                        <div class="project-image">
+
+                            <img
+                                src="imagens/vitanovabrasil.png"
+                                alt="Vita Nova Brasil"
+                            >
+
+                        </div>
+
+
+                        <div class="project-content">
+
+                            <div class="status">
+                                Projeto realizado
+                            </div>
+
+
+                            <h3>
+                                Vita Nova Brasil
+                            </h3>
+
+
+                            <p>
+
+                                Projeto de presença digital para a
+                                Vita Nova Brasil, desenvolvido para
+                                apresentar a marca e suas soluções
+                                de forma profissional.
+
+                            </p>
+
+
+                            <a
+                                href="http://vitanovabrasil.com.br"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="project-link"
+                            >
+                                Visitar Vita Nova Brasil →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             MAAYAH SALES AI
+        ====================================== -->
+
+        <section
+            class="section ai-section"
+            id="futuros"
+        >
+
+            <div class="container">
+
+
+                <div class="section-heading">
+
+                    <span class="label">
+                        Próximo lançamento
+                    </span>
+
+
+                    <h2 class="section-title">
+                        O futuro está sendo construído.
+                    </h2>
+
+                </div>
+
+
+
+                <div class="ai-card">
+
+
+                    <div class="ai-image">
+
+                        <img
+                            src="imagens/Maayah.jpeg"
+                            alt="Maayah Sales AI"
+                        >
+
+                    </div>
+
+
+
+                    <div class="ai-content">
+
+                        <span class="coming">
+                            EM BREVE
+                        </span>
+
+
+                        <h3>
+
+                            Maayah
+                            <span>Sales AI</span>
+
+                        </h3>
+
+
+                        <p>
+
+                            Uma nova solução de inteligência
+                            artificial criada para o universo
+                            do e-commerce.
+
+                        </p>
+
+
+                        <p>
+
+                            O projeto está sendo desenvolvido para
+                            utilizar inteligência artificial como
+                            ferramenta de apoio às operações,
+                            vendas e relacionamento com clientes
+                            no comércio eletrônico.
+
+                        </p>
+
+
+                        <div class="ai-features">
+
+                            <div class="ai-feature">
+                                ✦ Inteligência Artificial
+                            </div>
+
+
+                            <div class="ai-feature">
+                                ✦ E-commerce
+                            </div>
+
+
+                            <div class="ai-feature">
+                                ✦ Automação
+                            </div>
+
+
+                            <div class="ai-feature">
+                                ✦ Vendas inteligentes
+                            </div>
+
+                        </div>
+
+
+                        <span class="project-link">
+                            Lançamento em breve →
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             SERVIÇOS
+        ====================================== -->
+
+        <section
+            class="section"
+            id="servicos"
+        >
+
+            <div class="container">
+
+
+                <div class="section-heading">
+
+                    <span class="label">
+                        Especialidades
+                    </span>
+
+
+                    <h2 class="section-title">
+
+                        O que posso desenvolver.
+
+                    </h2>
+
+
+                    <p class="section-description">
+
+                        Soluções digitais pensadas para transformar
+                        necessidades em projetos reais.
+
+                    </p>
+
+                </div>
+
+
+
+                <div class="services">
+
+
+                    <article class="service">
+
+                        <div class="number">
+                            01
+                        </div>
+
+
+                        <h3>
+                            Websites profissionais
+                        </h3>
+
+
+                        <p>
+
+                            Sites institucionais, portfólios,
+                            páginas comerciais e projetos
+                            responsivos.
+
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="service">
+
+                        <div class="number">
+                            02
+                        </div>
+
+
+                        <h3>
+                            Sistemas e projetos digitais
+                        </h3>
+
+
+                        <p>
+
+                            Desenvolvimento de soluções
+                            personalizadas para empresas e
+                            profissionais.
+
+                        </p>
+
+                    </article>
+
+
+
+                    <article class="service">
+
+                        <div class="number">
+                            03
+                        </div>
+
+
+                        <h3>
+                            Inteligência Artificial
+                        </h3>
+
+
+                        <p>
+
+                            Desenvolvimento de novas aplicações
+                            utilizando IA, automação e tecnologias
+                            emergentes.
+
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================
+             CONTATO
+        ====================================== -->
+
+        <section
+            class="section dark-section"
+            id="contato"
+        >
+
+            <div class="container">
+
+
+                <div class="contact-box">
+
+                    <span class="label">
+                        Vamos conversar
+                    </span>
+
+
+                    <h2>
+
+                        Seu próximo projeto
+                        pode começar aqui.
+
+                    </h2>
+
+
+                    <p>
+
+                        Tem uma ideia, empresa ou projeto que
+                        precisa de uma solução digital?
+
+                        Entre em contato comigo.
+
+                    </p>
+
+
+                    <a
+                        href="https://wa.me/5598981956166?text=Olá%20Antonio!%20Conheci%20seu%20portfólio%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="btn btn-primary"
+                    >
+
+                        Falar pelo WhatsApp
+
+                    </a>
+
+
+                    <a
+                        href="tel:+5598981956166"
+                        class="phone"
+                    >
+
+                        (98) 98195-6166
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
+
+    <footer>
+
+        <div class="container footer">
+
+            <div class="footer-logo">
+
+                Antonio<span>Maia</span>
+
+            </div>
+
+
+            <div class="copyright">
+
+                © 2026 Antonio Maia.
+                Todos os direitos reservados.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================
+         WHATSAPP
+    ====================================== -->
+
+    <a
+        href="https://wa.me/5598981956166?text=Olá%20Antonio!%20Vi%20seu%20portfólio."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="whatsapp"
+        aria-label="WhatsApp"
+    >
+
+        ☎
+
+    </a>
+
+
+
+    <!-- =====================================
+         JAVASCRIPT
+    ====================================== -->
+
+    <script>
+
+        const menu =
+            document.getElementById("menu");
+
+        const nav =
+            document.getElementById("nav");
+
+
+        menu.addEventListener(
+            "click",
+            () => {
+
+                nav.classList.toggle(
+                    "active"
+                );
+
+            }
+        );
+
+
+        document
+            .querySelectorAll(".nav a")
+            .forEach(
+                link => {
+
+                    link.addEventListener(
+                        "click",
+                        () => {
+
+                            nav.classList.remove(
+                                "active"
+                            );
+
+                        }
+                    );
+
+                }
+            );
+
+    </script>
+
+
+</body>
+
+</html>
